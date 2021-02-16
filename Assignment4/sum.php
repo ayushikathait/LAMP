@@ -4,8 +4,8 @@
     </head>
     <body>
         <form method="POST" action="sum.php">
-            Number 1 <input type="number" name="num1" required>
-            Number 2 <input type="number" name="num2" required><br><br>
+            Number 1 <input type="number" name="num1" >
+            Number 2 <input type="number" name="num2" ><br><br>
             <input type="submit" name="submit" value="submit">
         </form>
     </body>
@@ -13,6 +13,7 @@
 
 
 <?php
+error_reporting(0);
 if(isset($_POST['submit'])){
     $num1 = $_POST['num1'];
     $num2 = $_POST['num2'];
