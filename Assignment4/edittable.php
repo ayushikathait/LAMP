@@ -18,7 +18,7 @@ include('config.php');
 				<th>E-Mail</th>
 				<th>Gender</th>
 				<th>City</th>
-				<th>Edit</th>
+				<th>Uodate</th>
 				<th>Delete</th>
 			</tr>
 		</thead>
@@ -31,7 +31,7 @@ include('config.php');
 				<td><?php echo $row['email']?></td>
 				<td><?php echo $row['gender']?></td>
 				<td><?php echo $row['city']?></td>
-			    <td><a href="edit.php?id=<?php echo $row['id']?>"><input style="padding-left: 10px; background-color: red; color:white" type="button" value="Edit"></a></td>
+			    <td><a href="edit.php?id=<?php echo $row['id']?>"><input style="padding-left: 10px; background-color: red; color:white" type="button" value="Update"></a></td>
 			    <td><input onclick="deleteme(<?php echo $row['id']?>)" style="padding-left: 10px; background-color: red; color:white" type="button" value="Delete"></td>
             </tr>
 
