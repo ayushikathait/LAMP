@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Swap paragraphs</title>
+    <style>
+        .p1{
+            color: blue;
+            font-size: 20px;
+        }
+        .p2{
+            color:green;
+            font-size: 20px;
+        }
+        h2{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Paragraph 1:</h2>
+    <p class="p1">JavaScript is the world's most popular programming language.
+        It is the programming language of the Web
+        It is easy to learn.This content originally belongs to paragraph 1 but will be swapped to paragraph 2 after clicking the change button.</p>
+    <h2>Paragraph 2:</h2>
+    <p class="p2">This webpage is created to swap data between two paragraphs.
+        This is done using javascript. This content originally belongs to paragraph 2 but will be swapped to paragraph 1 after clicking the change button.</p>
+    <button onclick="swapText()">Change</button>
+
+    <script>
+        function swapText(){
+            p1 = document.getElementsByClassName('p1')[0];
+            p2 = document.getElementsByClassName('p2')[0];
+            temp = p1.textContent;
+            p1.textContent = p2.textContent;
+            p2.textContent = temp;
+        }
+    </script>
+</body>
+</html>
