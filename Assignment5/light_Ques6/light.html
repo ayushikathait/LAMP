@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Image on WebPage</title>
+</head>
+<body>
+	<h1>Click on the button to turn ON/OFF the light.</h1>
+	<img id="img" src="off.jpg" height="400px" width="300px">
+	<input id="toggle" onclick="fun()" type="button" value="ON">
+
+
+</body>
+<script type="text/javascript">
+	function fun()
+	{
+		var onoff = document.getElementById("toggle").value;
+		if(onoff=="ON")
+		{
+			document.getElementById("img").src="on.jpeg";
+			document.getElementById("toggle").value = 'OFF';
+
+		}
+		else
+		{
+			document.getElementById("img").src="off.jpg";
+			 document.getElementById("toggle").value = 'ON';
+		}
+	}
+</script>
+</html>
